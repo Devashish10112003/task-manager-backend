@@ -1,0 +1,41 @@
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+
+# === Maven ===
+target/
+dependency-reduced-pom.xml
+
+# === Gradle ===
+.gradle/
+build/
+
+# === IntelliJ ===
+.idea/
+*.iml
+out/
+
+# === Eclipse ===
+.project
+.classpath
+.settings/
+
+# === VS Code ===
+.vscode/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+
+# === Environment files ===
+.env
+application-local.yml
+application-local.properties
+
+# === Test coverage ===
+coverage/
