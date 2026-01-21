@@ -72,7 +72,7 @@ public class EmployeeService {
             throw new IllegalStateException(String.format(EMPLOYEE_NOT_FOUND,id));
         }
 
-        if (email != null && !email.equals(existingEmployee.email()) && employeeDAO.existingEmployeeByEmail(email)) {
+        if (!StringUtil.isNullOrEmpty(email) && !email.equals(existingEmployee.email()) && employeeDAO.existingEmployeeByEmail(email)) {
             log.warn("Out EmployeeService.updateEmployeeInfo(), email already exists email={}", email);
             throw new IllegalArgumentException(String.format(EMAIL_ALREADY_EXISTS,email));
         }
