@@ -144,12 +144,12 @@ public class TaskDAO {
         }
 
         if (status != null) {
-            sql.append(", status = (SELECT id FROM tbl_static_task_status WHERE name = ?)");
+            sql.append(", status = (SELECT id FROM tbl_static_task_status WHERE value = ?)");
             params.add(status.name());
         }
 
         if (priority != null) {
-            sql.append(", priority = (SELECT id FROM tbl_static_task_priority WHERE name = ?)");
+            sql.append(", priority = (SELECT id FROM tbl_static_task_priority WHERE value = ?)");
             params.add(priority.name());
         }
 

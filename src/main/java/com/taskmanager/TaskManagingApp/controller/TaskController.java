@@ -27,6 +27,7 @@ import static com.taskmanager.TaskManagingApp.constants.ErrorMessages.*;
 
 @Slf4j
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/v1/tasks")
 @Tag(
         name = "Task Management",

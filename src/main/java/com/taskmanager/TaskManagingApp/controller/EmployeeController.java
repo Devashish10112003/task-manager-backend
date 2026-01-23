@@ -32,6 +32,8 @@ import static com.taskmanager.TaskManagingApp.constants.ErrorMessages.*;
         name = "Employee Management",
         description = "APIs for creating, updating, deleting employees and managing their tasks"
 )
+@CrossOrigin(origins = "http://localhost:5173")
+
 public class EmployeeController {
 
     private final EmployeeService employeeService;
